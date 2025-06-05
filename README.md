@@ -41,3 +41,13 @@ A. El que espera, escapa. El que actúa, se encierra.
 B. La libertad es un número mal entendido.
 C. El aire no se ve, pero fluye; así es la salida.
 D. Las paredes oyen lo que callamos, pero repiten mentiras.
+
+siendo la correcta la C
+
+**nota MUY escondida**
+
+Si el jugador examina la nota con atención, puede ver en letra más pequeña:
+
+“La verdad se esconde en lo invisible.”
+
+*Lo que también apunta a la metáfora del aire = salida.*
