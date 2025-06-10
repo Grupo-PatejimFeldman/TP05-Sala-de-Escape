@@ -51,3 +51,4 @@ Si el jugador examina la nota con atención, puede ver en letra más pequeña:
 “La verdad se esconde en lo invisible.”
 
 *Lo que también apunta a la metáfora del aire = salida.*
+
