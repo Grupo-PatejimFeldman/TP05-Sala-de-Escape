@@ -13,7 +13,7 @@ public class Juego{
             respuestas.Add(3, "2314");
             respuestas.Add(4, "celda");
             vidas = 3;
-            habitacion = 0;
+            habitacion = 1;
     }
 
     public int Respuesta(string respuesta){
