@@ -8,10 +8,10 @@ public class Juego{
 
     public void Inicializar(){
 
-            respuestas.Add(1, "2118");
-            respuestas.Add(2, "c");
-            respuestas.Add(3, "2314");
-            respuestas.Add(4, "celda");
+            respuestas.Add(0, "2118");
+            respuestas.Add(1, "c");
+            respuestas.Add(2, "2314");
+            respuestas.Add(3, "celda");
             vidas = 3;
             habitacion = 1;
     }

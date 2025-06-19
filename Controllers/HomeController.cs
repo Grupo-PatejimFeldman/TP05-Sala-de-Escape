@@ -18,7 +18,7 @@ public class HomeController : Controller
         Juego juego = new Juego();
         juego.Inicializar();
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
-        return View();
+        return View("Index");
     }
 
     public IActionResult Volver(){
@@ -63,10 +63,10 @@ public class HomeController : Controller
             return View("VidaMenos");
         }
         switch(juego.habitacion){
-            case 1: return View("Sala1"); break;
-            case 2: return View("Sala2"); break;
-            case 3: return View("Sala3"); break;
-            case 4: return View("Sala4"); break;
+            case 0: return View("Sala1"); break;
+            case 1: return View("Sala2"); break;
+            case 2: return View("Sala3"); break;
+            case 3: return View("Sala4"); break;
         }
         return View();
     }
@@ -75,10 +75,10 @@ public class HomeController : Controller
         Juego juego = Objeto.StringToObject<Juego>(HttpContext.Session.GetString("Juego"));
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
         switch(juego.habitacion){
-            case 1: return View("Sala1"); break;
-            case 2: return View("Sala2"); break;
-            case 3: return View("Sala3"); break;
-            case 4: return View("Sala4"); break;
+            case 0: return View("Sala1"); break;
+            case 1: return View("Sala2"); break;
+            case 2: return View("Sala3"); break;
+            case 3: return View("Sala4"); break;
         }
         return View();
     }
