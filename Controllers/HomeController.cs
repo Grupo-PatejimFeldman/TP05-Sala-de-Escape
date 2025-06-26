@@ -53,6 +53,7 @@ public class HomeController : Controller
 
     public IActionResult Comienzo(string Nombre, string Id){
         Juego juego = Objeto.StringToObject<Juego>(HttpContext.Session.GetString("Juego"));
+        juego.revalorizar();
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
         return View("Sala1");
     }
@@ -67,13 +68,8 @@ public class HomeController : Controller
         }else if(result == 1){
             return View("VidaMenos");
         }
-        switch(juego.habitacion){
-            case 0: return View("Sala1");
-            case 1: return View("Sala2");
-            case 2: return View("Sala3");
-            case 3: return View("Sala4");
-        }
-        return View();
+        return View("Sala" + (juego.habitacion +1));
+       
     }
     /* HACER LA VIEW DE CUANDO PERDIO UNA VIDA */
     public IActionResult Reanudar(){
