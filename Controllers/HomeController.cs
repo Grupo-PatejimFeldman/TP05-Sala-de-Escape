@@ -75,12 +75,6 @@ public class HomeController : Controller
     public IActionResult Reanudar(){
         Juego juego = Objeto.StringToObject<Juego>(HttpContext.Session.GetString("Juego"));
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
-        switch(juego.habitacion){
-            case 0: return View("Sala1");
-            case 1: return View("Sala2");
-            case 2: return View("Sala3");
-            case 3: return View("Sala4");
-        }
-        return View();
+        return View("Sala" + (juego.habitacion +1));
     }
 }

@@ -9,32 +9,167 @@ html {
   }
 }
 
+/* INICIO SALA 1 JAVA */
+
+button {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  margin-top: 59%;
+  background-color: transparent;
+  opacity: 0;
+}
+
+:modal {
+  background-color: rgb(231, 231, 200);
+  border: 2px solid burlywood;
+  border-radius: 5px;
+  margin: 20% 10% 0% 50%;
+  height: 100px;
+}
+
+p {
+  color: black;
+}
+
+/* FIN SALA 1 JAVA */
+
 *{
   margin: 0%;
   padding: 0%;
-
 }
-.index{
-  background-image: url("../img/fondoIndex.jpg");
-  background-repeat: no-repeat;
+.Index {
+  margin: 0;
+  background: url('../img/fondoIndex.jpg') no-repeat center center fixed;
   background-size: cover;
-  padding: 20% 5%;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px 60px 0px 60px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.Index div {
+  background-color: rgba(0, 0, 0, 0.6); /* Semitransparente negro */
+  padding: 40px 60px 0px 60px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+.Index h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
-.index h1{
-  background-color: burlywood;
-  width: max-content;
-  padding: 1%;
-  border-radius: 15px;
-  font-size: xx-large;
+.Index form {
+  display: flex;
+  justify-content: center;
 }
 
-.index input{
-  padding: 1%;
-  font-size: x-large;
-  margin: 0.5% 10%;
+.Index input[type="submit"] {
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: #c0392b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#Extra{
-  margin-left: 50%;
+.Index input[type="submit"]:hover {
+  background-color: #e74c3c;
+}
+
+
+.Registro {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('../img/Carcel-foto.jpg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+}
+
+.Registro-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border: 2px solid #e50914;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 20px #000;
+  text-align: center;
+}
+
+.Registro-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #e50914;
+  letter-spacing: 1px;
+  
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #333;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer; 
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #b00610;
+}
+.Sala1{
+  background-image: url("../img/Sala1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24% 20% 0.5% 50%;
+  background-color: rgb(56, 49, 27);
 }

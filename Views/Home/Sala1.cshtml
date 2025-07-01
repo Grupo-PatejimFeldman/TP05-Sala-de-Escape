@@ -1,6 +1,24 @@
-<h1>SALA 1</h1>
+<section class = "Sala1">
 <form action='@Url.Action("Respuesta", "Home")' method = "post">
     <input type="text" name="Respuesta">
     <input type="submit" value="validar">
 </form>
 @ViewBag.vidas
+<button id="showCarta"></button>
+
+<dialog id="Carta">
+  <form method="dialog">
+    <p>“La salida está en el plano. Fox River es más que concreto. Recordá: celda 40, ala D. Suma de accesos, menos la seguridad."</p>
+    <button>CERRAR</button>
+  </form>
+</dialog>
+</section>
+
+<script>
+const showCarta = document.getElementById("showCarta");
+const carta = document.getElementById("Carta");
+
+showCarta.addEventListener("click", () => {
+  carta.showModal();
+});
+</script>
