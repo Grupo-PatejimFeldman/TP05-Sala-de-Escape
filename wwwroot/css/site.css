@@ -216,7 +216,7 @@ margin-top: 5%;
 }
 
 .Sala2{
-  background-image: url("../img/Sala2.png");
+  background-image: url("../img/Sala2.PNG");
   background-size: cover;
   display: block;
   height: 575px;
@@ -236,7 +236,7 @@ margin-top: 5%;
 }
 
 .Sala3{
-  background-image: url("../img/Sala3.png");
+  background-image: url("../img/Sala3.PNG");
   background-position: center;
   background-repeat: no-repeat;
   padding: 17% 28% 28% 27%;
@@ -280,4 +280,22 @@ margin-top: 5%;
   background-size: cover;
   display: block;
   height: 1000px;
+}
+
+.Fin{
+  background-image: url("../img/Sala5.png");
+  background-size: cover;
+  display: block;
+  height: 1000px;
+  background-position: center;
+}
+
+.VidaMenos{
+  background-image: url("../img/VidaMenos.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 1000px;
+  padding-top: 2%;
+  text-align: center;
 }
