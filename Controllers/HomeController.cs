@@ -57,7 +57,7 @@ public class HomeController : Controller
 
     public IActionResult Respuesta(string respuesta){
         Juego juego = Objeto.StringToObject<Juego>(HttpContext.Session.GetString("Juego"));
-        ViewBag.Vidas = juego.vidas;
+        ViewBag.Vidas = (juego.vidas -1);
         int result = juego.Respuesta(respuesta);
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
         if (result == 0){

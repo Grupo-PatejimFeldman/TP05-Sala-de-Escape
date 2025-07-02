@@ -1,6 +1,24 @@
 <section class = "Sala3">
+<button id="showCarta"></button>
 <form action='@Url.Action("Respuesta", "Home")' method = "post">
-    <input type="text" name="Respuesta">
+    <input type="text" name="Respuesta" placeholder = "Clave...">
     <input type="submit" value="validar">
 </form>
+
+
+<dialog id="Carta">
+  <form method="dialog">
+    <p>“Primero llega quien despierta al gallo, luego el que carga el mundo en su espalda, después quien trabaja bajo el sol ardiente, y por último los que caminan entre las sombras, cuando ya nadie los ve"</p>
+    <button>CERRAR</button>
+  </form>
+</dialog>
 </section>
+
+<script>
+const showCarta = document.getElementById("showCarta");
+const carta = document.getElementById("Carta");
+
+showCarta.addEventListener("click", () => {
+  carta.showModal();
+});
+</script>

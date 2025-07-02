@@ -25,8 +25,8 @@ html {
   background-color: rgb(231, 231, 200);
   border: 2px solid burlywood;
   border-radius: 5px;
-  margin: 20% 10% 0% 50%;
-  height: 100px;
+  margin: 20% 10% 0% 20%;
+  height: 150px;
 }
 
 /* FIN SALA 1 JAVA */
@@ -36,12 +36,12 @@ html {
   padding: 0%;
 }
 .Index {
-  background-image: url(wwwroot/img/fondoIndex.jpg);
+  background-image: url("../img/fondoIndex.jpg");
   background-size: cover;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
-  padding: 20% 35% 14.9% 35%;
+  padding: 20% 35% 15.5% 35%;
 }
 .Index div {
   background-color: rgba(0, 0, 0, 0.6);
@@ -159,11 +159,16 @@ input[type="submit"]:hover {
   background-color: rgb(56, 49, 27);
 }
 
+.Sala1 dialog button{
+opacity: 10;
+margin-top: 5%;
+}
+
 .Extra{
-  background-image: url(wwwroot/img/fondoIndex.jpg);
+  background-image: url("../img/fondoIndex.jpg");
   background-size: cover;
   font-family: 'Courier New', Courier, monospace;
-  padding: 15% 26% 3.75% 26%;
+  padding: 15% 26% 9.8% 26%;
   display: inline-block;
 }
 
@@ -186,12 +191,12 @@ input[type="submit"]:hover {
 }
 
 .Historia {
-  background-image: url(wwwroot/img/fondoIndex.jpg);
+  background-image: url("../img/fondoIndex.jpg");
   background-size: cover;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
   justify-content: center;
-  padding: 20% 35% 15.5% 35%;
+  padding: 20% 35% 16.1% 35%;
 }
 .Historia div {
   background-color: rgba(0, 0, 0, 0.6);
@@ -208,4 +213,71 @@ input[type="submit"]:hover {
 
 .Historia div p{
   font-size: large;
+}
+
+.Sala2{
+  background-image: url("../img/Sala2.png");
+  background-size: cover;
+  display: block;
+  height: 575px;
+  padding: 20% 40% 0% 40%;
+}
+
+.Sala2 form{
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  align-items: center;
+  border-radius: 15px;
+}
+
+.Sala2 form input{
+  width: 46%;
+}
+
+.Sala3{
+  background-image: url("../img/Sala3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 17% 28% 28% 27%;
+  background-color: rgb(56, 49, 27);
+}
+
+.Sala3 form{
+  width: 20%;
+}
+
+.Sala3 dialog{
+  text-align: center;
+}
+
+.Sala3 dialog button{
+opacity: 10;
+margin-top: 5%;
+}
+
+.Sala3 button {
+  float: right;
+  margin: auto;
+  width: 150px;
+  height: 125px;
+  margin-top: 0%;
+  background-color: transparent;
+  opacity: 0;
+  margin-right: 15%;
+}
+
+.Sala4{
+  background-image: url("../img/SalaFinal.png");
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
+  padding: 34% 35% 14.9% 35%;
+}
+
+.Perdedor{
+  background-image: url("../img/Perdedor.png");
+  background-size: cover;
+  display: block;
+  height: 1000px;
 }
