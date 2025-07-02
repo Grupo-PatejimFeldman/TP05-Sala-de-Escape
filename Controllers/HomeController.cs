@@ -38,12 +38,9 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
         return View("Extra");
     }
-    public IActionResult Tutorial(){
-        Juego juego = Objeto.StringToObject<Juego>(HttpContext.Session.GetString("Juego"));
-        HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
-        return View("Tutorial");
-    }
-    public IActionResult Historia(){
+    
+    public IActionResult Historia()
+    {
         Juego juego = Objeto.StringToObject<Juego>(HttpContext.Session.GetString("Juego"));
         HttpContext.Session.SetString("Juego", Objeto.ObjectToString(juego));
         return View("Historia");
